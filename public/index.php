@@ -1,4 +1,4 @@
-<?php
+<?php 
 require_once '../app/db.php';
 
 $cars = $conn->query("SELECT * FROM cars");
@@ -11,6 +11,13 @@ $cars = $conn->query("SELECT * FROM cars");
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color:rgb(23, 141, 164);
+            background-image: url('https://koyob-car-images.s3.eu-west-2.amazonaws.com/BLAKE-MAYER-RED.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: lighten;
         }
         .navbar {
             background-color: #333;
@@ -31,6 +38,7 @@ $cars = $conn->query("SELECT * FROM cars");
         h1, h2 {
             text-align: center;
             margin-top: 20px;
+            color: #333;
         }
         .car-grid {
             display: flex;
@@ -45,7 +53,8 @@ $cars = $conn->query("SELECT * FROM cars");
             padding: 10px;
             width: 220px;
             text-align: center;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            background: rgba(163, 163, 165, 0.85); /* Light transparent background */
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
         }
         img {
             width: 200px;
@@ -84,7 +93,7 @@ $cars = $conn->query("SELECT * FROM cars");
 </div>
 
 <!-- Page Content -->
-<h1>Koyob Car Rental Service</h1>
+<h1>WELCOME TO KOYOB CAR RENTAL</h1>
 <h2>Available Cars</h2>
 
 <div class="car-grid">
@@ -107,4 +116,3 @@ $cars = $conn->query("SELECT * FROM cars");
 
 </body>
 </html>
-
